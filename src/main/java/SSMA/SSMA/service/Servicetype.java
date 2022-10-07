@@ -102,7 +102,7 @@ public class Servicetype {
         return resuldatado;
     }
 
-    public List<TwoType> update(List<TwoType> body) {
+    public List<TwoType> update(List<TwoType> body){
         String resultado;
 
         List<TwoType> response = new ArrayList<>();
@@ -115,7 +115,6 @@ public class Servicetype {
 
             for (TwoType typesave : response) {
                 repositoryType.save(typesave);
-
             }
 
         }
