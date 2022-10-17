@@ -59,7 +59,7 @@ public class controllerType {
         service.delete(id);
     }
 
-    @PutMapping("/update/{id}")
+    @PutMapping("/update")
     public List<TwoType> update (@RequestBody List<TwoType> body){
         return update(body);
     }
