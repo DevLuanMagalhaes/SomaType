@@ -16,6 +16,7 @@ import java.util.List;
 @Data
 @RestController
 @RequestMapping("/api")
+@CrossOrigin("*")
 public class controllerType {
 
     @Autowired

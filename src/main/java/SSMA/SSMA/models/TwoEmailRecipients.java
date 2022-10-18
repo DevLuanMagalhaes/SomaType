@@ -11,40 +11,24 @@ import java.sql.Timestamp;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "TWO_DOCUMENTS")
-public class TwoDocuments implements TwoEntity{
+@Table(name = "TWO_EMAIL_RECIPIENTS")
+public class TwoEmailRecipients implements TwoEntity{
 
     @Id
-    @Column(name="DOCUMENT_ID", nullable = false)
-    //@GeneratedValue(generator="seqDocumentId")
+    @Column(name="EMAIL_RECIPIENTS_ID", nullable = false)
+    //@GeneratedValue(generator="seqEmailRecipientsId")
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long documentId;
-
-    @Column(name="MODULE", nullable = false)
-    private Long module;
-
-    @Column(name="PROCESS", nullable = false)
-    private Long process;
-
-    @Column(name="SUBPROCESS", nullable = false)
-    private Long subprocess;
-
-    @Column(name="ITEM", nullable = false, length = 100)
-    private String item;
-
+    private Long emailRecipientsId;
+    @Column(name="GENERIC_EMAIL_ID", nullable = false)
+    private Long genericEmailId;
+    @Column(name="EMAIL")
+    private String email;
     @Column(name="CREATED_BY", nullable = false)
     private Long createdBy;
-
     @Column(name="CREATION_DATE", nullable = false)
     private Timestamp creationDate;
-
     @Column(name="LAST_UPDATED_BY", nullable = false)
     private Long lastUpdatedBy;
-
     @Column(name="LAST_UPDATE_DATE", nullable = false)
     private Timestamp lastUpdateDate;
-    /*
-    @JoinColumn(name="MODULE", referencedColumnName="TYPE_CODE")
-    private SsmaType moduleType;
-     */
 }
