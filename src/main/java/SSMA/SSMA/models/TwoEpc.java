@@ -6,24 +6,27 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
+
 @Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "TWO_CONS_CLIN_EXAMES_DIAGN")
-public class TwoConsClinImprDiagn implements TwoEntity{
+@Table(name = "TWO_EPC")
+public class TwoEpc implements TwoEntity{
 
     @Id
-    @Column(name="CONS_CLIN_IMPR_DIAGN_ID", nullable = false, length = 8)
-    //@GeneratedValue(generator="seqConsClinImprDiagnId")
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long consClinImprDiagnId;
+    @Column(name="EPC_ID", nullable = false, length = 7)
+    @GeneratedValue(generator="seqEpcId")
+    private Long epcId;
 
-    @Column(name="CONSULTA_CLINICA_ID", nullable = false, length = 8)
-    private Long consultaClinicaId;
+    @Column(name="EPC_DESCR", nullable = false, length = 70)
+    private String epcDescr;
 
-    @Column(name="CID_ID", nullable = false)
-    private Long cidId;
+    @Column(name="ESTABID", length = 12)
+    private String estabid;
+
+    @Transient
+    private String estabDescr;
 
     @Column(name="CREATED_BY", nullable = false)
     private Long createdBy;
@@ -36,4 +39,8 @@ public class TwoConsClinImprDiagn implements TwoEntity{
 
     @Column(name="LAST_UPDATE_DATE", nullable = false)
     private Timestamp lastUpdateDate;
+
+    @Column(name="STATUS", nullable = false, length = 1)
+    private String epcStatus;
+
 }

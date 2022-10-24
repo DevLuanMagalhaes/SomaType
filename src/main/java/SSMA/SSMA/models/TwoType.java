@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
@@ -48,6 +49,7 @@ public class TwoType implements TwoEntity{
 
     @Column(name="CREATION_DATE")
     @CreationTimestamp
+    @DateTimeFormat(pattern = "yyyy/mm/dd HH:mm")
     private Timestamp creationDate;
 
     @Column(name="LAST_UPDATED_BY", nullable = true)
@@ -55,6 +57,7 @@ public class TwoType implements TwoEntity{
 
     @Column(name="LAST_UPDATE_DATE")
     @UpdateTimestamp
+    @DateTimeFormat(pattern = "yyyy/mm/dd HH:mm")
     private Timestamp lastUpdateDate;
 
     @Column(name="TABLE_NAME", nullable = true, length = 30)

@@ -17,7 +17,8 @@ public class TwoExamsResults implements TwoEntity{
 
     @Id
     @Column(name="EXAMS_RESULTS_ID", nullable = false)
-    @GeneratedValue(generator="seqExamsResultsId")
+    //@GeneratedValue(generator="seqExamsResultsId")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long examsResultsId;
     @Column(name="COMPLEMENTARY_EXAMS_ID", nullable = false)
     private Long complementaryExamsId;
