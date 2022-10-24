@@ -6,6 +6,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
@@ -23,12 +24,13 @@ public class controllerType {
     Servicetype service;
 
     @GetMapping("/getTypes")
+    @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
     public List<TwoType> findAllTypes(@RequestParam(value = "typeId",required = false) Long typeId,
                                       @RequestParam(value = "typeCode", required = false) String typeCode,
                                       @RequestParam(value = "domainCode", required = false) String domainCode,
                                       @RequestParam(value = "flexValue01",required = false) String flexValue01,
                                       @RequestParam(value = "flexValue02",required = false) String flexValue02) {
-        System.out.println("Passou");
+
         return service.findAllTypes(typeId, typeCode, domainCode, flexValue01, flexValue02);
     }
 

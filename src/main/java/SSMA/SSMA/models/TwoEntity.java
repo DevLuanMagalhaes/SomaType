@@ -20,4 +20,5 @@ public interface TwoEntity extends Serializable {
     public Timestamp getLastUpdateDate();
 
     public void setLastUpdateDate(Timestamp lastUpdateDate);
+
 }
