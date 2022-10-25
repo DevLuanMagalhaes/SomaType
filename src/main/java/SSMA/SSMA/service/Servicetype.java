@@ -30,7 +30,9 @@ public class Servicetype {
         for (TwoType type : retorno2){
             type.setIsNew(true);
             type.setUpdated(false);
+
         }
+
 
 
         return retorno2;

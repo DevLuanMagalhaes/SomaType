@@ -6,7 +6,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
@@ -24,7 +23,7 @@ public class controllerType {
     Servicetype service;
 
     @GetMapping("/getTypes")
-    @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
+//    @DateTimeFormat(pattern = "dd/MM/yyyy")
     public List<TwoType> findAllTypes(@RequestParam(value = "typeId",required = false) Long typeId,
                                       @RequestParam(value = "typeCode", required = false) String typeCode,
                                       @RequestParam(value = "domainCode", required = false) String domainCode,

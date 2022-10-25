@@ -31,4 +31,8 @@ public class TwoExamsByJob implements TwoEntity{
     private Long lastUpdatedBy;
     @Column(name="LAST_UPDATE_DATE", nullable = false)
     private Timestamp lastUpdateDate;
+
+    @OneToOne(fetch=FetchType.EAGER)
+    @JoinColumn(name="EXAM_ID", referencedColumnName="EXAM_ID")
+    private TwoExams examsJobCollection;
 }

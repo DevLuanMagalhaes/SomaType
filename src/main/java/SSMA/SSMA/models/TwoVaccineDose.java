@@ -18,18 +18,25 @@ public class TwoVaccineDose implements TwoEntity{
    // @GeneratedValue(generator="seqVaccineDoseId")
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long vaccineDoseId;
+
     @Column(name="VACCINE_ID", nullable = false)
     private Long vaccineId;
+
     @Column(name="VALIDITY")
     private Long validity;
+
     @Column(name="ORDER_SEQUENCE")
     private Long orderSequence;
+
     @Column(name="CREATED_BY", nullable = false)
     private Long createdBy;
+
     @Column(name="CREATION_DATE", nullable = false)
     private Timestamp creationDate;
+
     @Column(name="LAST_UPDATED_BY", nullable = false)
     private Long lastUpdatedBy;
+
     @Column(name="LAST_UPDATE_DATE", nullable = false)
     private Timestamp lastUpdateDate;
 
