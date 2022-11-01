@@ -12,6 +12,7 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "TWO_ATTES_LICEN_RECIDIVISM")
+@SequenceGenerator(name="seqAttesLicenRecidivismId", sequenceName="TWO_ATTES_LICEN_RECIDIVISM_S", allocationSize=1)
 public class TwoAttesLicenRecidivism implements TwoEntity{
 
     @Id

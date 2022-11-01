@@ -12,6 +12,7 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "TWO_FUNCTION_CHANGE")
+@SequenceGenerator(name="seqFunctionChangeId", sequenceName="TWO_FUNCTION_CHANGE_S", allocationSize=1)
 public class TwoFunctionChange implements TwoEntity{
 
     @Id

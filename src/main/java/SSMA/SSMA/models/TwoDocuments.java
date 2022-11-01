@@ -12,6 +12,7 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "TWO_DOCUMENTS")
+@SequenceGenerator(name="seqDocumentId", sequenceName="TWO_DOCUMENTS_S", allocationSize=1)
 public class TwoDocuments implements TwoEntity{
 
     @Id

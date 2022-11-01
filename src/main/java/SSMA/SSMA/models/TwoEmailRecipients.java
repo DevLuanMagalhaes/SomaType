@@ -12,6 +12,7 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "TWO_EMAIL_RECIPIENTS")
+@SequenceGenerator(name="seqEmailRecipientsId", sequenceName="TWO_EMAIL_RECIPIENTS_S", allocationSize=1)
 public class TwoEmailRecipients implements TwoEntity{
 
     @Id

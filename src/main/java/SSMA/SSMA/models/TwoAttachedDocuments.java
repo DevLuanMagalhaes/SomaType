@@ -12,6 +12,7 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "TWO_ATTACHED_DOCUMENTS")
+@SequenceGenerator(name="seqAttachId", sequenceName="TWO_ATTACHED_DOCUMENTS_S", allocationSize=1)
 public class TwoAttachedDocuments implements TwoEntity{
 
     @Id

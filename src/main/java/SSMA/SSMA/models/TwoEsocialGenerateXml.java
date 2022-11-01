@@ -12,6 +12,7 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "TWO_ESOCIAL_GENERATE_XML")
+@SequenceGenerator(name="seqEsocialExecutionId", sequenceName="TWO_ESOCIAL_GENERATE_XML_S", allocationSize=1)
 public class TwoEsocialGenerateXml implements TwoEntity{
 
     @Id

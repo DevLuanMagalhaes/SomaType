@@ -12,6 +12,7 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "TWO_ACCESS_GROUP")
+@SequenceGenerator(name="seqAccessGroupId", sequenceName="TWO_ACCESS_GROUP_S", allocationSize=1)
 public class TwoAccessGroup implements TwoEntity{
 
     @Id

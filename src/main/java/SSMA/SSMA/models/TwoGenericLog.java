@@ -12,6 +12,7 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "TWO_GENERIC_LOG")
+@SequenceGenerator(name="seqGenericLogId", sequenceName="TWO_GENERIC_LOG_S", allocationSize=1)
 public class TwoGenericLog implements TwoEntity{
 
     @Id

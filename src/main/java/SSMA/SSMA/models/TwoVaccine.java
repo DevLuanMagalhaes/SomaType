@@ -13,6 +13,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "TWO_VACCINE")
+@SequenceGenerator(name="seqVaccineId", sequenceName="TWO_VACCINE_S", allocationSize=1)
 public class TwoVaccine implements TwoEntity{
 
     @Id @Column(name="VACCINE_ID", nullable = false)

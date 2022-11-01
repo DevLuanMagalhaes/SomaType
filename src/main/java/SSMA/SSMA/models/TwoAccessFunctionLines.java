@@ -12,6 +12,7 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "TWO_ACCESS_FUNCTION_LINES")
+@SequenceGenerator(name="seqaccessFunctionLineId", sequenceName="TWO_ACCESS_FUNCTION_LINES_S", allocationSize=1)
 public class TwoAccessFunctionLines implements TwoEntity{
 
     @Column(name="ACCESS_FUNCTION_ID", nullable = false)

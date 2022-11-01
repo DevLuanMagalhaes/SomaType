@@ -13,6 +13,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "TWO_GENERIC_EMAIL")
+@SequenceGenerator(name="seqGenericEmailId", sequenceName="TWO_GENERIC_EMAIL_S", allocationSize=1)
 public class TwoGenericEmail implements TwoEntity{
 
     @Id @Column(name="GENERIC_EMAIL_ID", nullable = false)

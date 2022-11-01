@@ -12,6 +12,7 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "TWO_ENVIRONMENTAL_RESPONS")
+@SequenceGenerator(name="seqEnvironmentalResponsId", sequenceName="TWO_ENVIRONMENTAL_RESPONS_S", allocationSize=1)
 public class TwoEnvironmentalRespons implements TwoEntity{
 
     @Id

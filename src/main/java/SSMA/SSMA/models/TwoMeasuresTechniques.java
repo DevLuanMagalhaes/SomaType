@@ -12,6 +12,7 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "TWO_MEASURES_TECHNIQUES")
+@SequenceGenerator(name="seqMeasuresTechniquesId", sequenceName="TWO_MEASURES_TECHNIQUES_S", allocationSize=1)
 public class TwoMeasuresTechniques implements TwoEntity{
 
     @Id

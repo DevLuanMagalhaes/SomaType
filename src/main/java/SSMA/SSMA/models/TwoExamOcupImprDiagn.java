@@ -12,6 +12,7 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "TWO_EXAM_OCUP_IMPR_DIAGN")
+@SequenceGenerator(name="seqexamOcupImprDiagnId", sequenceName="TWO_EXAM_OCUP_IMPR_DIAGN_S", allocationSize=1)
 public class TwoExamOcupImprDiagn implements TwoEntity{
 
 

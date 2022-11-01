@@ -14,6 +14,7 @@ import java.util.Map;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "TWO_ANAMNESIS_ITEM_RATED")
+@SequenceGenerator(name="seqAnamnesisItemRatedId", sequenceName="TWO_ANAMNESIS_ITEM_RATED_S", allocationSize=1)
 public class TwoAnamnesisItemRated implements TwoEntity{
     @Id
     @Column(name="ANAMNESIS_ITEM_RATED_ID", nullable = false)

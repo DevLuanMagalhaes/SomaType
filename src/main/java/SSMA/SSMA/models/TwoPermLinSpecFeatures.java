@@ -12,6 +12,7 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "TWO_PERM_LIN_SPEC_FEATURES")
+@SequenceGenerator(name="seqPermLinSpecFeaturesId", sequenceName="TWO_PERM_LIN_SPEC_FEATURES_S", allocationSize=1)
 public class TwoPermLinSpecFeatures implements TwoEntity{
 
     @Id

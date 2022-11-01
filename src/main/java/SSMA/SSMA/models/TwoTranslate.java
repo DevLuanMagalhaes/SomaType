@@ -14,6 +14,7 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "TWO_TRANSLATE")
+@SequenceGenerator(name="seqTranslateId", sequenceName="TWO_TRANSLATE_S", allocationSize=1)
 public class TwoTranslate implements TwoEntity{
 
     @Id

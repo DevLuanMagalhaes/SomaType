@@ -13,6 +13,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "TWO_EXAME_OCUPACIONAL")
+@SequenceGenerator(name="seqExameOcupacionalId", sequenceName="TWO_EXAME_OCUPACIONAL_S", allocationSize=1)
 public class TwoExameOcupacional implements TwoEntity{
 
     @Id

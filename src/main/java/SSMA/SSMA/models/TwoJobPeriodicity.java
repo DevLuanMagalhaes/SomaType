@@ -13,6 +13,8 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "TWO_JOB_PERIODICITY")
+@SequenceGenerator(name = "seqJobPeriodId", sequenceName = "TWO_JOB_PERIOD_S",
+        allocationSize = 1)
 public class TwoJobPeriodicity implements TwoEntity{
 
     @Id

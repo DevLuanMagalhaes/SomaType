@@ -13,6 +13,7 @@ import java.util.Map;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "TWO_ANAMNESIS_CONCEPT")
+@SequenceGenerator(name="seqAnamnesisConceptId", sequenceName="TWO_ANAMNESIS_CONCEPT_S", allocationSize=1)
 public class TwoAnamnesisConcept implements TwoEntity{
 
     @Id

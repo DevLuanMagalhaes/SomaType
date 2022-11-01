@@ -13,6 +13,7 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "TWO_EXAMS_GROUP_UO")
+@SequenceGenerator(name="seqExamsGroupUOId", sequenceName="TWO_EXAMS_GROUP_UO_S", allocationSize=1)
 public class TwoExamsGroupUO implements Serializable {
 
     @Id @Column(name="EXAM_GROUP_UO_ID", nullable = false)

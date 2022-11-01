@@ -13,6 +13,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "TWO_GHE_RISK_PERIODICITY")
+@SequenceGenerator(name="seqRiskPeriodicityId", sequenceName="TWO_GHE_RISK_PERIODICITY_S", allocationSize=1)
 public class TwoGHERiskPeriodicity implements TwoEntity{
 
     @Id

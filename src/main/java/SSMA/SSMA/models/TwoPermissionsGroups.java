@@ -12,6 +12,7 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "TWO_PERMISSIONS_GROUPS")
+@SequenceGenerator(name="seqPermissionGroupId", sequenceName="TWO_PERMISSIONS_GROUPS_S", allocationSize=1)
 public class TwoPermissionsGroups implements TwoEntity{
 
     @Column(name="CREATED_BY", nullable = false)

@@ -12,6 +12,7 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "TWO_INCONSISTENCY_CONTROL")
+@SequenceGenerator(name="seqInconsistControlId", sequenceName="TWO_INCONSIST_CONTROL_S", allocationSize=1)
 public class TwoInconsistencyControl implements TwoEntity{
 
     @Id

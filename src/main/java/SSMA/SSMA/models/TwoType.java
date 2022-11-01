@@ -15,6 +15,7 @@ import java.util.Map;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "TWO_TYPE")
+@SequenceGenerator(name="seqTypeId", sequenceName="TWO_TYPE_S", allocationSize=1)
 public class TwoType implements TwoEntity{
 
     @Id

@@ -11,6 +11,7 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "TWO_CONS_CLIN_EXAMES_DIAGN")
+@SequenceGenerator(name="seqConsClinImprDiagnId", sequenceName="TWO_CONS_CLIN_IMPR_DIAGN_S", allocationSize=1)
 public class TwoConsClinImprDiagn implements TwoEntity{
 
     @Id

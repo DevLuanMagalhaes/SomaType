@@ -12,6 +12,7 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "TWO_SOA_CTRL_INT_ESOCIAL")
+@SequenceGenerator(name = "ssmaSoaCtrlIntEsocialId", sequenceName = "TWO_SOA_CTRL_INT_ESOCIAL_S", allocationSize = 1)
 public class TwoSoaCtrlIntEsocial implements TwoEntity{
 
     @Id

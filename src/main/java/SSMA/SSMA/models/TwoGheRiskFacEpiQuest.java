@@ -12,6 +12,7 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "TWO_GHE_RISK_FAC_EPI_QUEST")
+@SequenceGenerator(name="seqGheRiskFacEpiQuestId", sequenceName="TWO_GHE_RISK_FAC_EPI_QUEST_S", allocationSize=1)
 public class TwoGheRiskFacEpiQuest implements TwoEntity{
 
     @Id

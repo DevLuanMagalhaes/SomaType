@@ -12,6 +12,7 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "TWO_CID_BENEFITS_HISTORY")
+@SequenceGenerator(name="seqCidBenefitsHistoryId", sequenceName="TWO_CID_BENEFITS_HISTORY_S", allocationSize=1)
 public class TwoCidBenefitsHistory implements TwoEntity{
 
     @Id

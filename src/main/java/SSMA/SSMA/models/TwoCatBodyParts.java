@@ -14,6 +14,7 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "TWO_CAT_BODY_PARTS")
+@SequenceGenerator(name="seqCatBodyPartsId", sequenceName="TWO_CAT_BODY_PARTS_S", allocationSize=1)
 public class TwoCatBodyParts implements TwoEntity{
 
     @Id

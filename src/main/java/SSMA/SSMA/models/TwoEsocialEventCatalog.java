@@ -13,6 +13,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "TWO_ESOCIAL_EVENT_CATALOG")
+@SequenceGenerator(name = "seqEsocialEventCatalogId", sequenceName = "TWO_ESOCIAL_EVENT_CATALOG_S", allocationSize = 1)
 public class TwoEsocialEventCatalog implements TwoEntity{
 
     @Id

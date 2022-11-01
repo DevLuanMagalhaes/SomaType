@@ -13,6 +13,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "TWO_BENEFITS_HISTORY")
+@SequenceGenerator(name="seqBenefitsHistoryId", sequenceName="TWO_BENEFITS_HISTORY_S", allocationSize=1)
 public class TwoBenefitsHistory implements TwoEntity{
 
     @Id @Column(name="BENEFITS_HISTORY_ID")

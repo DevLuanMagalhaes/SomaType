@@ -12,6 +12,7 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "TWO_MEASURES_UNIT_FACT_RISK")
+@SequenceGenerator(name="seqMeasuresFactRiskId", sequenceName="TWO_MEASURES_FACT_RISK_S", allocationSize=1)
 public class TwoMeasuresUnitFactRisk implements TwoEntity{
 
     @Id

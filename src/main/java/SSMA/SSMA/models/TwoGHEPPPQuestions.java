@@ -12,6 +12,7 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "TWO_GHE_PPP_QUESTIONS")
+@SequenceGenerator(name="seqGhePppQuestionsId", sequenceName="TWO_GHE_PPP_QUESTIONS_S", allocationSize=1)
 public class TwoGHEPPPQuestions implements TwoEntity{
 
     @Id

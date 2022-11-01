@@ -12,6 +12,7 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name ="TWO_CAT_WITNESS")
+@SequenceGenerator(name="seqCatWitnessId", sequenceName="TWO_CAT_WITNESS_S", allocationSize=1)
 public class TwoCatWitness implements TwoEntity{
 
     @Id

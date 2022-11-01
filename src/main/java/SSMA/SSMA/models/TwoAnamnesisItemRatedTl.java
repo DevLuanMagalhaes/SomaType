@@ -13,6 +13,7 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "TWO_ANAMNESIS_ITEM_RATED_TL")
+@SequenceGenerator(name="SsmaAnamnesisItemRatedId", sequenceName="TWO_ANAMNESIS_ITEM_RATED_TL_S", allocationSize=1)
 public class TwoAnamnesisItemRatedTl implements TwoEntity{
 
     @Id

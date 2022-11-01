@@ -12,6 +12,7 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "TWO_OBSERVACOES_PPP")
+@SequenceGenerator(name="seqObservacoesPppId", sequenceName="TWO_OBSERVACOES_PPP_S", allocationSize=1)
 public class TwoObservacoesPpp implements TwoEntity{
 
     @Id

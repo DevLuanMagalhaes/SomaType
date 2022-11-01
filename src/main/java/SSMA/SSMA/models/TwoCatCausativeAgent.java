@@ -12,6 +12,7 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "TWO_BENEFITS_HISTORY")
+@SequenceGenerator(name="seqCatCausativeAgentId", sequenceName="TWO_CAT_CAUSATIVE_AGENT_S", allocationSize=1)
 public class TwoCatCausativeAgent implements TwoEntity{
 
     @Id

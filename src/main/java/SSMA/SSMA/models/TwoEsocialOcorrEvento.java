@@ -12,6 +12,7 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "TWO_ESOCIAL_OCORR_EVENTO")
+@SequenceGenerator(name = "seqEsocialOcorrEventoId", sequenceName = "TWO_ESOCIAL_OCORR_EVENTO_S", allocationSize = 1)
 public class TwoEsocialOcorrEvento implements TwoEntity{
 
     @Id

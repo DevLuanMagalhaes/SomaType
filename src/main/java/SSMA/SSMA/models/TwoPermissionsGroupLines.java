@@ -13,6 +13,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "TWO_PERMISSIONS_GROUP_LINES")
+@SequenceGenerator(name="seqPermissionGroupLineId", sequenceName="TWO_PERMISSIONS_GROUP_LINES_S", allocationSize=1)
 public class TwoPermissionsGroupLines implements TwoEntity{
 
     @Column(name="CREATED_BY", nullable = false)

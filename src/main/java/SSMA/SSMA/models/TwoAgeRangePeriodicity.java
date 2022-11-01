@@ -13,6 +13,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "SSMA_AGE_RANGE_PERIODICITY")
+@SequenceGenerator(name="seqAgeRangePeriodId", sequenceName="TWO_AGE_RANGE_PERIOD_S", allocationSize=1)
 public class TwoAgeRangePeriodicity  implements TwoEntity{
 
     @Id

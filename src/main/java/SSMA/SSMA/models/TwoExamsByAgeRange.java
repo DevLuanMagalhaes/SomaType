@@ -12,6 +12,7 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "TWO_EXAMS_BY_AGE_RANGE")
+@SequenceGenerator(name="seqExamsByAgeRangeId", sequenceName="TWO_EXAMS_BY_AGE_RANGE_S", allocationSize=1)
 public class TwoExamsByAgeRange implements TwoEntity{
 
     @Id

@@ -12,6 +12,7 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "TWO_AUDIOMETER")
+@SequenceGenerator(name="seqAudiometerId", sequenceName="TWO_AUDIOMETER_S", allocationSize=1)
 public class TwoAudiometer implements TwoEntity{
 
     @Id

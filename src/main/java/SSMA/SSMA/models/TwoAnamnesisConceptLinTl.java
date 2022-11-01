@@ -12,6 +12,7 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "TWO_ANAMNESIS_CONCEPT_LIN_TL")
+@SequenceGenerator(name="seqAnamnesisConceptLinesTlId", sequenceName="TWO_ANAMNESIS_CONCEPT_TL_S", allocationSize=1)
 public class TwoAnamnesisConceptLinTl implements TwoEntity{
 
     @Id

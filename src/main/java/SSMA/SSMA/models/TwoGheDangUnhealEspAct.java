@@ -12,6 +12,7 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "TWO_GHE_DANG_UNHEAL_ESP_ACT")
+@SequenceGenerator(name="seqGheDangUnhealEspActId", sequenceName="TWO_GHE_DANG_UNH_ESP_ACT_S", allocationSize=1)
 public class TwoGheDangUnhealEspAct implements TwoEntity{
 
     @Id

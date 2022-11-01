@@ -13,6 +13,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "TWO_GHE_RISK_FACTORS_EPI")
+@SequenceGenerator(name="seqRiskEpiId", sequenceName="TWO_GHE_RISK_FACTORS_EPI_S", allocationSize=1)
 public class TwoGHERiskFactorsEPI implements TwoEntity{
 
     @Id

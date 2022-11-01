@@ -12,6 +12,7 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "TWO_CARGA_2240_CTRL")
+@SequenceGenerator(name="seqcarga2240ctrl", sequenceName="TWO_CARGA_2240_CTRL_S", allocationSize=1)
 public class TwoCarga2240Ctrl implements TwoEntity{
 
     @Id
