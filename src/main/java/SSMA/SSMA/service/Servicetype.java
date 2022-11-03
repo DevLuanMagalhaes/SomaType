@@ -97,7 +97,7 @@ public class Servicetype {
             resuldatado = "Id: " + id +  "deletado com sucesso";
 
         } catch (Exception e) {
-            resuldatado = "Erro ao deletar o id: + id+" + id;
+            resuldatado = "Erro ao deletar o id: + id + " + id;
 
         }
 
