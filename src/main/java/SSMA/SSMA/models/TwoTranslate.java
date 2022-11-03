@@ -19,8 +19,8 @@ public class TwoTranslate implements TwoEntity{
 
     @Id
     @Column(name="TRANSLATE_ID", nullable = true)
-    //@GeneratedValue(generator="seqTranslateId")
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(generator="seqTranslateId")
+   // @GeneratedValue(strategy = GenerationType.AUTO)
     private Long translateId;
 
     @Column(name="LANGUAGE_CODE", nullable = true, length = 3)
