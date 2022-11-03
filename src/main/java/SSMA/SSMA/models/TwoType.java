@@ -20,14 +20,13 @@ public class TwoType implements TwoEntity{
 
     @Id
     @Column(name="TYPE_ID", nullable = false)
-    //@GeneratedValue(generator="seqTypeId")
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(generator="seqTypeId")
     private Long typeId;
 
-    @Column(name="TYPE_CODE", nullable = false, length = 40)
+    @Column(name="TYPE_CODE", nullable = true, length = 40)
     private String typeCode;
 
-    @Column(name="DOMAIN_CODE", nullable = false, length = 30)
+    @Column(name="DOMAIN_CODE", nullable = true, length = 30)
     private String domainCode;
 
     @Column(name="FLEX_VALUE_01", nullable = true, length = 200)
