@@ -57,13 +57,11 @@ public class controllerType {
     }
 
     @DeleteMapping("/delete/{id}")
-    public void excluir(@PathVariable(value = "id") Long id ){
-        service.delete(id);
-    }
+    public String excluir(@PathVariable(value = "id") Long id ){ return service.delete(id); }
 
     @PutMapping("/update")
     public List<TwoType> update (@RequestBody List<TwoType> body){
-        return update(body);
+        return service.update(body);
     }
 
 }

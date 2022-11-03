@@ -46,6 +46,6 @@ public class TwoTranslate implements TwoEntity{
     private Long lastUpdatedBy;
 
     @Column(name="LAST_UPDATE_DATE")
-    @UpdateTimestamp
+    @UpdateTimestamp        
     private Timestamp lastUpdateDate;
 }
