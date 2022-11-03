@@ -94,10 +94,10 @@ public class Servicetype {
 
         try {
             repositoryType.deleteById(id);
-            resuldatado = "Id: " + id +  " deletado com sucesso";
+            resuldatado = "Type id: " + id +  " deletado com sucesso";
 
         } catch (Exception e) {
-            resuldatado = "Erro ao deletar o id: " + id;
+            resuldatado = "Erro ao deletar o Type id: " + id;
 
         }
 
