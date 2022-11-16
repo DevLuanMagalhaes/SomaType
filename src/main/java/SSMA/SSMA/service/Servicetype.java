@@ -28,8 +28,8 @@ public class Servicetype {
         List <TwoType> retorno2  = repositoryType.findAllTypes(typeId, typeCode, domainCode, flexValue01, flexValue02);
 
         for (TwoType type : retorno2){
-            type.setIsNew(true);
-            type.setUpdated(false);
+            type.setIsNew("N");
+            type.setIsNew("N");
 
         }
 
@@ -46,8 +46,8 @@ public class Servicetype {
         List <TwoType> retorno  = repositoryType.findByFlexValue(domainCode, typeCode, flexValue01, flexValue02);
 
         for (TwoType type : retorno){
-            type.setIsNew(true);
-            type.setUpdated(false);
+            type.setIsNew("N");
+            type.setIsNew("N");
         }
 
 
@@ -62,8 +62,8 @@ public class Servicetype {
         List <TwoType> retorno  =  repositoryType.findByDomain(domainCode, flexValue01, flexValue02);
 
         for (TwoType type : retorno){
-            type.setIsNew(true);
-            type.setUpdated(false);
+            type.setIsNew("N");
+            type.setIsNew("N");
         }
 
 

@@ -37,11 +37,11 @@ public class TwoType implements TwoEntity{
 
     //@Column(name = "IS_NEW", nullable = false)
     @Transient
-    private Boolean isNew;
+    private String isNew;
 
     //@Column(name = "UPDATEd" , nullable = false)
     @Transient
-    private Boolean updated;
+    private String updated;
 
     @Column(name="CREATED_BY", nullable = true)
     private Long createdBy;
