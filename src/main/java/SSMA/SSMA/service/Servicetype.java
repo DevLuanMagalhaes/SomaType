@@ -29,7 +29,7 @@ public class Servicetype {
 
         for (TwoType type : retorno2){
             type.setIsNew("N");
-            type.setIsNew("N");
+            type.setUpdated("N");
 
         }
 
@@ -47,7 +47,7 @@ public class Servicetype {
 
         for (TwoType type : retorno){
             type.setIsNew("N");
-            type.setIsNew("N");
+            type.setUpdated("N");
         }
 
 
@@ -63,7 +63,7 @@ public class Servicetype {
 
         for (TwoType type : retorno){
             type.setIsNew("N");
-            type.setIsNew("N");
+            type.setUpdated("N");
         }
 
 
